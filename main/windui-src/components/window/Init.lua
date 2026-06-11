@@ -123,12 +123,6 @@ return function(Config)
 	end
 
 	if not RunService:IsStudio() and Window.Folder and writefile then
-		if not isfolder("NO MERCY/" .. Window.Folder) then
-			makefolder("NO MERCY/" .. Window.Folder)
-		end
-		if not isfolder("NO MERCY/" .. Window.Folder .. "/assets") then
-			makefolder("NO MERCY/" .. Window.Folder .. "/assets")
-		end
 		if not isfolder(Window.Folder) then
 			makefolder(Window.Folder)
 		end

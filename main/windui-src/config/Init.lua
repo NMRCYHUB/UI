@@ -106,7 +106,7 @@ function ConfigManager:Init(WindowTable)
     
     Window = WindowTable
     ConfigManager.Folder = Window.Folder
-    ConfigManager.Path = "NO MERCY/" .. tostring(ConfigManager.Folder) .. "/config/"
+    ConfigManager.Path = tostring(ConfigManager.Folder) .. "/config/"
     
     if not isfolder(ConfigManager.Path) then
         makefolder(ConfigManager.Path)

@@ -752,7 +752,7 @@ function Creator.Image(Img, Name, Corner, Folder, Type, IsThemeTag, Themed, Them
 		}).IconFrame
 		IconLabel.Parent = ImageFrame
 	elseif string.find(Img, "http") and not string.find(Img, "roblox.com") then
-		local FileName = "NO MERCY/" .. Folder .. "/assets/." .. Type .. "-" .. Name .. ".png"
+		local FileName = Folder .. "/assets/." .. Type .. "-" .. Name .. ".png"
 		local success, response = pcall(function()
 			task.spawn(function()
 				local response = Creator.Request

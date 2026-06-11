@@ -265,9 +265,7 @@ function WindUI:CreateWindow(Config)
 	local CreateWindow = require("./components/window/Init")
 
 	if not RunService:IsStudio() and writefile then
-		if not isfolder("NO MERCY") then
-			makefolder("NO MERCY")
-		end
+
 		if Config.Folder then
 			makefolder(Config.Folder)
 		else
