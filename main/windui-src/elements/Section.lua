@@ -219,6 +219,7 @@ function Element:New(Config)
             if not Section.Expandable then
                 Section.Expandable = true
                 ChevronIconFrame.Visible = true
+                Main.Content.Visible = true
                 UpdateTitleSize()
             end
         end, ElementsModule, Config.UIScale, Config.Tab)
